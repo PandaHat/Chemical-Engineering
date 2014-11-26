@@ -1,5 +1,7 @@
 package com.pandahat.chemengi;
 
+import com.pandahat.chemengi.minerals.MineralLoader;
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -9,7 +11,7 @@ public class ChemicalEngineering {
 
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){
-		
+		MineralLoader.setupMinerals();
 	}
 	
 	@Mod.EventHandler
